@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_height="match_parent"
+    tools:context=".Gui.CreateHospitalAccountActivity">
+
+    <ImageView
+        android:id="@+id/hos_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/default_img" />
+
+    <EditText
+        android:id="@+id/hos_name_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Hospital Name" />
+
+    <EditText
+        android:id="@+id/hos_address_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Hospital Address" />
+
+    <EditText
+        android:id="@+id/hos_email_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/hos_password_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/hos_confirm_password_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/hos_create_acc_btn"
+        style="@style/ButtonStyle2"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:text="Create Hospital account" />
+
+</LinearLayout>

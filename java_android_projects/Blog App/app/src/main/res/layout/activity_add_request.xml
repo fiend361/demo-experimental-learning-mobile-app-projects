@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gui.AddRequestActivity">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_below="@+id/req_quantity_ET"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/APositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/req_quantity_ET"
+            android:onClick="onRadioButtonClicked"
+            android:text="A+" />
+
+        <RadioButton
+            android:layout_below="@+id/APositive"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/ANegative"
+            android:text="A-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_below="@+id/req_quantity_ET"
+            android:layout_toRightOf="@+id/APositive"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/BPositive"
+            android:text="B+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/BNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BPositive"
+            android:layout_toRightOf="@+id/APositive"
+            android:onClick="onRadioButtonClicked"
+            android:text="B-" />
+
+
+        <RadioButton
+            android:layout_toRightOf="@+id/BPositive"
+            android:layout_below="@+id/req_quantity_ET"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/ABPositive"
+            android:text="AB+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_toRightOf="@+id/BPositive"
+            android:layout_below="@+id/APositive"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/ABNegative"
+            android:text="AB-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RadioButton
+            android:layout_toRightOf="@+id/ABPositive"
+            android:layout_below="@+id/req_quantity_ET"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/OPositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O+" />
+
+        <RadioButton
+            android:layout_toRightOf="@+id/ABPositive"
+            android:layout_below="@+id/OPositive"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/ONegative"
+            android:text="O-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/req_description_ET"
+        android:hint="Description"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/req_quantity_ET"
+        android:hint="Quantity Aimed for:"
+        android:layout_below="@+id/req_description_ET"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="9dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/req_points"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Points received per Liter"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:padding="10dp"
+        android:text="Post Request"
+        style="@style/ButtonStyle2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/post_request_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
